@@ -1,0 +1,7 @@
+require('settings')
+require('remap')
+require('plugins/packer')
+require('plugins/dracula')
+require('plugins/treesitter')
+require('plugins/telescope')
+require('plugins/nvim-tree')
