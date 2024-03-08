@@ -7,3 +7,5 @@ vim.opt.expandtab = true
 vim.opt.list = true
 vim.opt.listchars:append("space:⋅")
 vim.opt.laststatus = 3
+vim.opt.splitbelow = true
+vim.opt.splitright = true
