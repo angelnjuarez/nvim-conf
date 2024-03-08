@@ -1,13 +1,12 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Plugins
+    -- Plugins
     use 'github/copilot.vim'
     use 'wbthomason/packer.nvim'
     use 'nvim-lualine/lualine.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
-    use {'lukas-reineke/indent-blankline.nvim', as = 'ibl'}
-    -- Treesitter syntax highlighting
+    --Treesitter syntax highlighting
     use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     -- Telescope fuzzy finder 
     use ({
