@@ -5,7 +5,8 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use 'wbthomason/packer.nvim'
     use 'nvim-lualine/lualine.nvim'
-    use { "catppuccin/nvim", as = "catppuccin" }
+--    use { "catppuccin/nvim", as = "catppuccin" }
+    use "olimorris/onedarkpro.nvim"
     --Treesitter syntax highlighting
     use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     -- Telescope fuzzy finder 
