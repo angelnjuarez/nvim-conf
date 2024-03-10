@@ -12,11 +12,11 @@ require('lualine').setup {
     }
   },
   sections = {
-    lualine_a = {{'mode', icon = ''}},
+    lualine_a = {{'mode', icon = '', separator = {left = '', right = ''}}},
     lualine_b = {},
     lualine_c = {},
     lualine_x = {'location', 'filename', 'filetype'},
-    lualine_y = {'branch', 'diff'},
+    lualine_y = {{'branch', 'diff', separator = {left = '', right = ''}}},
     lualine_z = {}
   },
 }
