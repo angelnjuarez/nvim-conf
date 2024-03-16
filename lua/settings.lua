@@ -17,8 +17,6 @@ opt.listchars:append("space:⋅")
 opt.splitbelow = true
 opt.splitright = true
 -- disable nvim intro
-opt.shortmess:append "sI"
+--opt.shortmess:append "sI"
 -- Only lualiine mode
 vim.opt.showmode = false
-
-
