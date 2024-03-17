@@ -40,4 +40,10 @@ return require('packer').startup(function(use)
             {'rcarriga/nvim-notify'},
         },
     }
+    use {
+        'ThePrimeagen/harpoon',
+        requires = {
+            {'nvim-lua/popup.nvim'},
+        },
+    }
 end)

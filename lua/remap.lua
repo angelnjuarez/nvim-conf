@@ -12,3 +12,7 @@ vim.keymap.set('n', '<C-n>', ':NvimTreeFocus<CR>', {})
 -- Terminal
 vim.keymap.set('n', '<C-t>', ':sp<CR>:terminal<CR>:resize 15<CR>', {})
 vim.keymap.set('t', '<esc>', '<C-\\><C-n>', {})
+-- Harpoon
+vim.keymap.set('n', '<C-a>', ':lua require("harpoon.mark").add_file()<CR>', {} )
+vim.keymap.set('n', '<C-o>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', {} )
+vim.keymap.set('n', '<C-<tab>>', ':lua require("harpoon.ui").nav_next()<CR>', {})
