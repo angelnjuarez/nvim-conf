@@ -32,6 +32,13 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-nvim-lsp'},
             {'L3MON4D3/LuaSnip'},
         },
+    }
     use 'mfussenegger/nvim-jdtls'
+    use {
+        'folke/noice.nvim',
+        requires = {
+            {'MunifTanjim/nui.nvim' },
+            {'rcarriga/nvim-notify'},
+        },
     }
 end)
