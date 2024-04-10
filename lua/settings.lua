@@ -20,3 +20,4 @@ opt.splitright = true
 --opt.shortmess:append "sI"
 -- Only lualiine mode
 vim.opt.showmode = false
+vim.opt.hidden = true
