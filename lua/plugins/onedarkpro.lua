@@ -1,3 +1,3 @@
 require("onedarkpro").setup()
 
-vim.cmd("colorscheme onedark_vivid")
+vim.cmd("colorscheme onedark_dark")
