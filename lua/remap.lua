@@ -16,3 +16,5 @@ vim.keymap.set('t', '<esc>', '<C-\\><C-n>', {})
 vim.keymap.set('n', '<C-a>', ':lua require("harpoon.mark").add_file()<CR>', {} )
 vim.keymap.set('n', '<C-o>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', {} )
 vim.keymap.set('n', '<C-<tab>>', ':lua require("harpoon.ui").nav_next()<CR>', {})
+-- Oil
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
