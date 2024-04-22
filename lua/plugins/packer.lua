@@ -74,8 +74,8 @@ return require("packer").startup(function(use)
 	})
 	use({
 		"dinhhuy258/git.nvim",
-    config = function()
-      require("git").setup()
-    end,
+		config = function()
+			require("git").setup()
+		end,
 	})
 end)
