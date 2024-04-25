@@ -15,6 +15,19 @@ vim.keymap.set('t', '<esc>', '<C-\\><C-n>', {})
 -- Harpoon
 vim.keymap.set('n', '<C-a>', ':lua require("harpoon.mark").add_file()<CR>', {} )
 vim.keymap.set('n', '<C-o>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', {} )
-vim.keymap.set('n', '<C-<tab>>', ':lua require("harpoon.ui").nav_next()<CR>', {})
+vim.keymap.set('n', '<C-x>', ':lua require("harpoon.ui").nav_next()<CR>', {})
 -- Oil
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- Tmux
+--vim.keymap.set('n', "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft)
+--vim.keymap.set('n', "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
+--vim.keymap.set('n', "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp)
+--vim.keymap.set('n', "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
+--vim.keymap.set('n', "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
+--vim.keymap.set('n', "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
+-- Copilot
+vim.keymap.set('i', '<C-Right>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+  })
+vim.g.copilot_no_tab_map = true
