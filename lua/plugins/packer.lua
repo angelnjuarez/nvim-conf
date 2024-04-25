@@ -45,13 +45,6 @@ return require("packer").startup(function(use)
 			{ "nvim-lua/popup.nvim" },
 		},
 	})
-	use({
-		"akinsho/toggleterm.nvim",
-		tag = "*",
-		config = function()
-			require("toggleterm").setup()
-		end,
-	})
 	-- Highlight patterns (Resaltado)
 	use({
 		"echasnovski/mini.hipatterns",
@@ -72,10 +65,5 @@ return require("packer").startup(function(use)
 			require("oil").setup()
 		end,
 	})
-	use({
-		"dinhhuy258/git.nvim",
-		config = function()
-			require("git").setup()
-		end,
-	})
+  use 'christoomey/vim-tmux-navigator'
 end)
