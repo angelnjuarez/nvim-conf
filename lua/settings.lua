@@ -1,6 +1,7 @@
 local opt = vim.opt
 local g = vim.g
 local o = vim.o
+local cmd = vim.cmd
 
 -- Global
 g.mapleader = " "
@@ -16,8 +17,9 @@ opt.listchars:append("space:⋅")
 -- Split
 opt.splitbelow = true
 opt.splitright = true
--- disable nvim intro
---opt.shortmess:append "sI"
 -- Only lualiine mode
-vim.opt.showmode = false
-vim.opt.hidden = true
+opt.showmode = false
+opt.hidden = true
+
+-- Colorscheme
+cmd.colorscheme("catppuccin-macchiato")

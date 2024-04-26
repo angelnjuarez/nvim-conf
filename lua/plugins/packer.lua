@@ -6,6 +6,7 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lualine/lualine.nvim")
 	use("olimorris/onedarkpro.nvim")
+  use { "catppuccin/nvim", as = "catppuccin" }
 	--Treesitter syntax highlighting
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	-- Telescope fuzzy finder
@@ -30,6 +31,7 @@ return require("packer").startup(function(use)
 			{ "hrsh7th/cmp-nvim-lsp" },
 			{ "L3MON4D3/LuaSnip" },
 		},
+  use("stevearc/conform.nvim"),
 	})
 	use("mfussenegger/nvim-jdtls")
 	use({
