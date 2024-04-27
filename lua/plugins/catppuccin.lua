@@ -73,10 +73,6 @@ require("catppuccin").setup({
 		},
 	},
 	integrations = {
-		telescope = {
-			enabled = true,
-			style = "nvchad",
-		},
 		cmp = true,
 		gitsigns = true,
 		nvimtree = true,
@@ -84,6 +80,10 @@ require("catppuccin").setup({
 		notify = true,
 		mason = true,
 		harpoon = true,
+		telescope = {
+			enabled = true,
+			style = "macchiato",
+		},
 		mini = {
 			enabled = true,
 			indentscope_color = "",
